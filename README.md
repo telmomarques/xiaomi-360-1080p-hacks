@@ -15,3 +15,10 @@ This is still highly experimental stuff. Please make sure you know what you are 
 4. Power on the camera
 5. Look for the IP address of the camera on your routers DHCP table and telnet into it
 6. Username is "root" (no quotes), and there is no password
+
+## I want to contribute with a hack!
+Awesome, thank you!
+
+Create a new folder inside "x360h" and put an `.sh` script inside. It will be automatically executed on boot. You can also put other resources inside your folder (like any armv7 executable), and use your `.sh` script as an entry point.
+
+Finally, make a pull request.
