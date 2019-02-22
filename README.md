@@ -1,6 +1,6 @@
-# Xiaomi Mi Camera 360? 1080p Hacks
+# Xiaomi Mi Camera 360º 1080p Hacks
 
-![Xiaomi Mi Home Security Camera 360? 1080P MJSXJ02CM](https://github.com/telmomarques/xiaomi-360-1080p-hacks/blob/master/images/camera.png)
+![Xiaomi Mi Home Security Camera 360º 1080P MJSXJ02CM](https://github.com/telmomarques/xiaomi-360-1080p-hacks/blob/master/images/camera.png)
 
 ## What is this?
 Provides a way of running custom software on the MJSXJ02CM camera.
