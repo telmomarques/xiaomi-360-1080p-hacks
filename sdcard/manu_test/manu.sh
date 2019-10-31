@@ -1,8 +1,5 @@
 #!/bin/sh
-echo "Xiaomi 360 Hacks enabled"
+echo "Xiaomi Hacks enabled"
 rm -rf /tmp/factory_mode
 
-#Go only 1 level deep
-for f in /mnt/sdcard/x360h/*/*.sh ; do
-	sh $f &
-done;
+/mnt/sdcard/manu_test/v2.sh &

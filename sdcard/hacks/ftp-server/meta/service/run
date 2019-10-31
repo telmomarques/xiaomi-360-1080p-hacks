@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /mnt/sdcard/hacks/ftp-server/bin
+exec ./uFTP

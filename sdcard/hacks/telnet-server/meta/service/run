@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /mnt/sdcard/hacks/busybox/busybox telnetd
