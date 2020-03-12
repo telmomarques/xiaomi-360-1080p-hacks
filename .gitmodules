@@ -1,6 +1,3 @@
-[submodule "submodules/video-stream"]
-	path = submodules/video-stream
-	url = https://github.com/telmomarques/xiaomi-360-1080p-video-stream
 [submodule "submodules/x360h1080p-rtsp-server"]
 	path = submodules/x360h1080p-rtsp-server
 	url = https://github.com/telmomarques/x360h1080p-rtsp-server.git
