@@ -1,3 +1,6 @@
 [submodule "submodules/x360h1080p-rtsp-server"]
 	path = submodules/x360h1080p-rtsp-server
 	url = https://github.com/telmomarques/x360h1080p-rtsp-server.git
+[submodule "submodules/mija-framegrabber"]
+	path = submodules/mija-framegrabber
+	url = https://github.com/crckmc/mija-framegrabber.git
