@@ -4,3 +4,6 @@
 [submodule "submodules/mija-framegrabber"]
 	path = submodules/mija-framegrabber
 	url = https://github.com/crckmc/mija-framegrabber.git
+[submodule "submodules/x360h1080p-websocket-stream-server"]
+	path = submodules/x360h1080p-websocket-stream-server
+	url = https://github.com/telmomarques/x360h1080p-websocket-stream-server.git
