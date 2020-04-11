@@ -7,3 +7,9 @@
 [submodule "submodules/x360h1080p-websocket-stream-server"]
 	path = submodules/x360h1080p-websocket-stream-server
 	url = https://github.com/telmomarques/x360h1080p-websocket-stream-server.git
+[submodule "submodules/x360h1080p-web-config-client"]
+	path = submodules/x360h1080p-web-config-client
+	url = https://github.com/telmomarques/x360h1080p-web-config-client
+[submodule "submodules/x360h1080p-web-config-server"]
+	path = submodules/x360h1080p-web-config-server
+	url = https://github.com/telmomarques/x360h1080p-web-config-server
