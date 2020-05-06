@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /mnt/sdcard/hacks/websocket-stream-server/bin/
+exec ./websocket-stream-server -m=/mnt/data/etc/framegrabber/websocket_mainstream -s=/mnt/data/etc/framegrabber/websocket_substream

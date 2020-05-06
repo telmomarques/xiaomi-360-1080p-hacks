@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ETCDIR=/mnt/data/etc/framegrabber/
+RTSP_MAINSTREAM_PIPE="${ETCDIR}rtsp_mainstream"
+
+mkdir -p $ETCDIR
+mkfifo $RTSP_MAINSTREAM_PIPE
+
+cd /mnt/sdcard/hacks/framegrabber/bin
+exec ./framegrabber -f $RTSP_MAINSTREAM_PIPE -c 0

@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /mnt/sdcard/hacks/web-config/bin
+exec ./web-config-server

@@ -1,2 +1,4 @@
 *.ini
 *.xcf
+/sdcard/hacks/*/bin/*
+/sdcard/hacks/web-config/www/*
