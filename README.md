@@ -6,7 +6,16 @@
 - [FAQ](#faq)
 - [These Guys are Awesome](#these-guys-are-awesome)
 
+# 📹 RTSP Is Here!
+![RTSP is happening](images/itshappening.gif)
+
+Keep calm and follow the procedure!
+
+Seriously now: it's still in beta, please read everything before continuing.
+
 ## Supported Cameras
+For now this is it, I'm working on supporting more cameras.
+
 Model Name(s) | Picture
 --- | ---
 MJSXJ02CM|![MJSXJ02CM](images/MJSXJ02CM.jpg)
@@ -19,13 +28,13 @@ MJSXJ02CM|![MJSXJ02CM](images/MJSXJ02CM.jpg)
 - Telnet Server
 
 ## Install Instructions
-The hacks exploit a flaw in firmware version 3.4.2_0062, **please read the instructions very carefully** to know if you have to downgrade.
+The hacks exploits a flaw in firmware version 3.4.2_0062, **please read the instructions very carefully** to know if you have to downgrade.
 
-1. First [Check your camera firmware version](#view-camera-firmware-version)
+- First [Check your camera firmware version](#view-camera-firmware-version)
 
-2a. If you have firmware version 3.4.2_0062, go to [Install the hacks](#install-the-hacks)
+- If you have firmware version 3.4.2_0062, go to [Install the hacks](#install-the-hacks)
 
-2b. If you have another firmware version, go to [Downgrade the Firmware](#downgrade-the-firmware)
+- If you have another firmware version, go to [Downgrade the Firmware](#downgrade-the-firmware)
 
 ### View camera firmware version
 1. Configure the camera using the Mi Home app
@@ -34,13 +43,13 @@ The hacks exploit a flaw in firmware version 3.4.2_0062, **please read the instr
 4. The current firmware version is presented on the screen
 
 ### Downgrade the Firmware
-**You will lose all the camera configurations!**
+**You will lose the camera configuration!**
 
-??Please be careful!
+⚠️ Please be careful!
 
-??Do not power down the camera while flashing!
+⚠️ Do not power down the camera while flashing!
 
-??Make sure you understand all the steps before continuing!
+⚠️ Make sure you understand all the steps before continuing!
 
 1. Grab tf_recovery.bin file from [here](https://github.com/telmomarques/xiaomi-360-1080p-hacks/raw/master/firmware/3.4.2_0062/tf_recovery.img).
 2. Put the file in the root of your SD Card (don't change the name!)
@@ -60,15 +69,15 @@ The hacks exploit a flaw in firmware version 3.4.2_0062, **please read the instr
 
 ## FAQ
 
-### I can't downgrade the firmware, I follow the instructions but nothing happens
+### I can't downgrade the firmware, I follow the instructions but nothing happens.
 Thy another SD Card. This actually happens a lot, trying a different SD Card usually solves it.
 
-### The RTSP stream is corrupted / stops working after a while
+### The RTSP stream is corrupted / stops working after a while.
 The RTSP server is still in alpha stage.
 
 You may see some corrupted frames here and there, and the server may stop working after a few hours (restarting the camera solves it). We're working on it, but if a 100% stable video stream is **critical** for you, then it's still not ready.
 
-### I'm worried about security, can I create/modify the [hack] password
+### I'm worried about security, can I create/modify the [hack] password?
 
 Security is in the roadmap, but still not the primary focus. Right now you'll have to secure the camera by making sure it's only accessible on your private network, and that your network is secure.
 
