@@ -1,0 +1,4 @@
+#!/bin/sh
+mkdir -p /mnt/data/etc/dropbear
+cd /mnt/sdcard/hacks/ssh-server/bin
+exec ./dropbear -FERB
