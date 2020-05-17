@@ -1,0 +1,6 @@
+{
+  "source": "github-release-asset",
+  "owner": "telmomarques",
+  "repository": "openssh-portable",
+  "assetName": "sftp-server"
+}

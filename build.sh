@@ -147,7 +147,7 @@ main()
       clean
     ;;
 
-    build)
+    rc)
       release=$2
       cameraModel=$3
 
