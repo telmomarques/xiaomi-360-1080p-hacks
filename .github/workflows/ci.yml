@@ -24,7 +24,7 @@ jobs:
       run: sudo snap install jq
 
     - name: Build (pre-release)
-      if: env.isReleaseCandidate == 'true'
+      if: env.isReleaseCandidate == 'true' || (env.isReleaseCandidate == 'false' && env.isReleaseCandidate == 'true')
       run: ./build rc
 
     - name: Release (pre-release)
