@@ -25,6 +25,8 @@ jobs:
 
     - name: Build (pre-release)
       if: ${{ env.isReleaseCandidate == 'true' || (env.isReleaseCandidate == 'false' && env.isFinalRelease == 'false') }}
+      env:
+        THAT_HASH: ${{ secrets.THAT_HASH }}
       run: chmod +x build && ./build rc
 
     - name: Release (pre-release)
