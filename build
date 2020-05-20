@@ -25,7 +25,7 @@ github_download_release_asset() {
     \"} \
   "
 
-  curl -s -H "Authorization: bearer db810166f48289029e1cd378b4d632c8a5899ecd" -X POST -d "${query}" https://api.github.com/graphql |
+  curl -s -H "Authorization: bearer $THAT_HASH" -X POST -d "${query}" https://api.github.com/graphql |
   jq -r ".data.repository.release.releaseAssets.edges[0].node.downloadUrl" |
   xargs wget -q --show-progress -P ${destPath}
 }
