@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - '*'
+    tags:
+      - '*'
+env:
+  isReleaseCandidate: ${{ contains(github.ref, 'tags') && contains(github.ref, '-rc') }}
+  isFinalRelease: ${{ contains(github.ref, 'tags') && !contains(github.ref, '-rc') }}
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+
+    - name: Check out source code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: sudo snap install jq
+
+    - name: Build (pre-release)
+      if: env.isReleaseCandidate == 'true'
+      run: ./build rc
+
+    - name: Release (pre-release)
+      if: env.isReleaseCandidate == 'true'
+      uses: ncipollo/release-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        prerelease: true
+        artifacts: sdcard.zip
+        
+    - name: Update latest-rc tag
+      if: env.isReleaseCandidate == 'true'
+      uses: ncipollo/release-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: latest-rc
+        allowUpdates: true
+        replacesArtifacts: true
+        prerelease: true
+        artifacts: sdcard.zip
+
+    - name: Build (final)
+      if: env.isFinalRelease == 'true'
+      run: ./build final
+
+    - name: Release (final)
+      if: env.isFinalRelease == 'true'
+      uses: ncipollo/release-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: sdcard.zip
+
+    - name: Update latest tag
+      if: env.isFinalRelease == 'true'
+      uses: ncipollo/release-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: latest
+        allowUpdates: true
+        replacesArtifacts: true
+        artifacts: sdcard.zip
+
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: sdcard.zip
+        path: sdcard.zip

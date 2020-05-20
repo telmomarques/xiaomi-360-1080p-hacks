@@ -54,9 +54,13 @@ process_github_release_asset_download()
 {
   local owner=$1
   local repository=$2
-  local tagName="latest-rc"
   local assetName=$3
   local destPath=$4
+
+  local tagName="latest"
+  if [ $releaseType == "rc" ]; then
+    tagName="latest-rc"
+  fi
 
   echo Downloading \"${owner}/${repository}@${tagName}/${assetName}\" to \"${destPath}/$assetName\"
 
@@ -101,13 +105,6 @@ process_build_file()
   fi
 }
 
-clean_directory()
-{
-  local directory=$1
-  echo "Cleaning ${directory}"
-  find ${directory} -mindepth 1 ! -name '.build' -exec rm -rf {} +
-}
-
 clean()
 {
   echo "Cleaning..."
@@ -115,7 +112,21 @@ clean()
   shopt -s globstar
   for buildFile in ./**/.build
   do
-    clean_directory `dirname ${buildFile}`
+    local dirname=`dirname ${buildFile}`
+
+    echo "Cleaning ${dirname}"
+
+    local deleteArray=(`cat ${buildFile} | jq -c ".assetName"`)
+    local deleteRules=`cat ${buildFile} | jq -c ".clean"`
+
+    if [ ${deleteRules} != "null" ]; then
+      deleteArray=(`cat ${buildFile} | jq ".clean[]"`)
+    fi
+
+    for file in "${deleteArray[@]}"; do
+      rm -rf ${dirname}/${file:1:-1}
+    done
+    
   done
 
   echo "Cleaning package"
@@ -147,13 +158,16 @@ main()
       clean
     ;;
 
-    rc)
-      release=$2
-      cameraModel=$3
+    rc | final)
+      releaseType=$1
 
       clean
       build
       package
+    ;;
+
+    *)
+      echo "Invalid target '${1}'"
     ;;
   esac
 }

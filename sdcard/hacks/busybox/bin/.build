@@ -1,5 +1,0 @@
-{
-  "source": "external",
-  "filename": "busybox",
-  "url": "https://busybox.net/downloads/binaries/1.31.0-defconfig-multiarch-musl/busybox-armv7l"
-}

@@ -1,7 +1,6 @@
 *.ini
 *.xcf
 sdcard.zip
-sdcard/hacks/busybox/bin/busybox
 sdcard/hacks/framegrabber/bin/ipc009/framegrabber
 sdcard/hacks/rtsp-server/bin/rtspserver
 sdcard/hacks/runit/bin/choose

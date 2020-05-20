@@ -2,5 +2,9 @@
   "source": "github-release-asset",
   "owner": "telmomarques",
   "repository": "x360h1080p-web-config-client",
-  "assetName": "web-config-client.zip"
+  "assetName": "web-config-client.zip",
+  "clean":
+  [
+    "*"
+  ]
 }

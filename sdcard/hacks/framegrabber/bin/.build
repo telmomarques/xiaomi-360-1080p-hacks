@@ -2,5 +2,9 @@
   "source": "github-release-asset",
   "owner": "telmomarques",
   "repository": "mija-framegrabber",
-  "assetName": "framegrabber.zip"
+  "assetName": "framegrabber.zip",
+  "clean":
+  [
+    "ipc009"
+  ]
 }
