@@ -1,0 +1,9 @@
+{
+  "users":
+  [
+  {{range $i, $u := .Users}}
+    {{if $i}}, {{end}}
+    {"systemUsername": "{{.SystemUsername}}", "username": "{{.Username}}", "password": "{{.Password}}"}
+  {{end}}
+  ]
+}
