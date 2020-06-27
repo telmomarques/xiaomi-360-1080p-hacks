@@ -13,4 +13,5 @@ if [ ! -f "$BINARY_PATH" ]; then
   exit 1
 fi
 
-exec $BINARY_PATH "$@"
+cp -f ${BINARY_PATH} /mnt/data/bin
+exec /mnt/data/bin/framegrabber "$@"

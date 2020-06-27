@@ -1,3 +1,4 @@
 #!/bin/sh
 cd /mnt/sdcard/hacks/rtsp-server/bin
-exec ./rtspserver -c ../config/config.json -m /mnt/data/etc/framegrabber/rtsp_mainstream -s /mnt/data/etc/framegrabber/rtsp_substream
+cp -f rtspserver /mnt/data/bin
+exec /mnt/data/bin/rtspserver -c ../config/config.json -m /mnt/data/etc/framegrabber/rtsp_mainstream -s /mnt/data/etc/framegrabber/rtsp_substream
