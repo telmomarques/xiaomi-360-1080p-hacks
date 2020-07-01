@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /mnt/sdcard/hacks/motor-control/bin
+exec ./motord
