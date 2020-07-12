@@ -1,3 +1,5 @@
+[![discord](https://img.shields.io/discord/713125176971231233?label=discord)](http://discord.gg/qggupzu)
+
 # Mi Camera Hacks
 
 - [Supported Cameras](#supported-cameras)
