@@ -63,7 +63,7 @@ The hacks exploits a flaw in firmware version 3.4.2_0062, **please read the inst
 ### Install the hacks
 1. Configure the camera using the Mi Home app
 2. Download the latest release from [releases](https://github.com/telmomarques/xiaomi-360-1080p-hacks/releases)
-3. Copy the **contents** of "sdcard" folder to the root of your SD Card
+3. Copy the **contents** of "sdcard" folder to the root of your SD Card ( The folders "hacks" and "manu_test" should go on SDCard root. )
 4. Power off the camera and insert the SD Card
 5. Power on the camera
 6. Find the IP address of your camera
