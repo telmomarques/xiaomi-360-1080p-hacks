@@ -16,7 +16,11 @@ Keep calm and follow the procedure!
 Seriously now: it's still in beta, please read everything before continuing.
 
 ## Supported Cameras
-For now this is it, I'm working on supporting more cameras.
+⚠️⚠️⚠️⚠️⚠️ DO NOT FLASH IF THE MODEL NAME DOESN'T MATCH ⚠️⚠️⚠️⚠️⚠️
+
+⚠️⚠️⚠️⚠️⚠️ IT WILL SOFTBRICK THE CAMERA ⚠️⚠️⚠️⚠️⚠️
+
+For now this is it...
 
 Model Name(s) | Picture
 --- | ---
