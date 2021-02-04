@@ -1,3 +1,9 @@
+# This project is no longer being maintained.
+
+If you're looking for mjsxj05cm check this project: https://github.com/cmiguelcabral/mjsxj05cm-hacks
+
+For mjsxj02cm keep reading.
+
 [![discord](https://img.shields.io/discord/713125176971231233?label=discord)](http://discord.gg/qggupzu)
 
 # Mi Camera Hacks
@@ -25,6 +31,7 @@ For now this is it...
 Model Name(s) | Picture
 --- | ---
 MJSXJ02CM|![MJSXJ02CM](images/MJSXJ02CM.jpg)
+
 
 ## Features
 ### Feature list
